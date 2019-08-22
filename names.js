@@ -1,7 +1,30 @@
-let prefixes = ["hai", "hoi"];
-let suffixes = ["ree", "m8"];
+let prefixes = [];
+let suffixes = [];
 let prefix = "";
 let suffix = "";
+
+var rawFile = new XMLHttpRequest();
+rawFile.open("GET", "file:///text/prefixes", false);
+rawFile.onreadystatechange = function () {
+  if(rawFile.readyState === 4) {
+    if(rawFile.status === 200 || rawFile.status == 0) {
+      var allText = rawFile.responseText;
+      prefixes = allText.split("\n");
+    }
+  }
+}
+rawFile.send(null);
+var rawFile = new XMLHttpRequest();
+rawFile.open("GET", "file:///text/suffixes", false);
+rawFile.onreadystatechange = function () {
+  if(rawFile.readyState === 4) {
+    if(rawFile.status === 200 || rawFile.status == 0) {
+      var allText = rawFile.responseText;
+      suffixes = allText.split("\n");
+    }
+  }
+}
+rawFile.send(null);
 
 function display() {
   document.getElementById("name-text").innerHTML = prefix + suffix;
