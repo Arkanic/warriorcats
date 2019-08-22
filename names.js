@@ -4,7 +4,7 @@ let prefix = "";
 let suffix = "";
 
 var rawFile = new XMLHttpRequest();
-rawFile.open("GET", "file:///text/prefixes", false);
+rawFile.open("GET", "file:///text/prefixes.txt", false);
 rawFile.onreadystatechange = function () {
   if(rawFile.readyState === 4) {
     if(rawFile.status === 200 || rawFile.status == 0) {
@@ -15,7 +15,7 @@ rawFile.onreadystatechange = function () {
 }
 rawFile.send(null);
 var rawFile = new XMLHttpRequest();
-rawFile.open("GET", "file:///text/suffixes", false);
+rawFile.open("GET", "file:///text/suffixes.txt", false);
 rawFile.onreadystatechange = function () {
   if(rawFile.readyState === 4) {
     if(rawFile.status === 200 || rawFile.status == 0) {
