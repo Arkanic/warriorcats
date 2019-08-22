@@ -1,5 +1,5 @@
-let prefixes = ["", ""];
-let suffixes = ["", ""];
+let prefixes = ["hai", "hoi"];
+let suffixes = ["ree", "m8"];
 let prefix = "";
 let suffix = "";
 
