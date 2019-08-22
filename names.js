@@ -3,24 +3,24 @@ let suffixes = ["ree", "m8"];
 let prefix = "";
 let suffix = "";
 
-display = function() {
+function init() {
   document.getElementById("name-text").innerHTML = prefix + suffix;
 }
 
-changePrefix = function() {
+function changePrefix() {
   prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
   display();
 }
-changeSuffix = function() {
+function changeSuffix() {
   suffix = suffixes[Math.floor(Math.random() * suffixes.length)];
   display();
 }
-changeAll = function() {
+function changeAll() {
   changePrefix();
   changeSuffix();
   display();
 }
 
-init = function() {
+function init() {
   changeAll();
 }
