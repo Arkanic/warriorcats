@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>hey</title>
+    <title>Warriors name generator</title>
+    <script src="names.js"></script>
+    <link href="css/global.css" type="text/css" rel="stylesheet"/>
   </head>
-  <body>
-    <p>im just kinda claiming this name on herokuapp for now.</p>
-    <p>I think i might make a name generator here</p>
-    <p>hello <marquee>there</marquee></p>
+  <body onLoad="wc.init()">
+    <p id="name-text">~</p>
+    <p>
+      <button onclick="wc.changePrefix()">Change Prefix</button>
+      <button onclick="wc.changeAll()">Change Name</button>
+      <button onclick="wc.changeSuffix()">Change Suffix</button>
+    </p>
   </body>
 </html>
