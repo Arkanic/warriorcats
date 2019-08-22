@@ -3,7 +3,7 @@ let suffixes = ["ree", "m8"];
 let prefix = "";
 let suffix = "";
 
-function init() {
+function display() {
   document.getElementById("name-text").innerHTML = prefix + suffix;
 }
 
