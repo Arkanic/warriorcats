@@ -1,7 +1,7 @@
-prefixes = ["", ""];
-suffixes = ["", ""];
-prefix = "";
-suffix = "";
+let prefixes = ["", ""];
+let suffixes = ["", ""];
+let prefix = "";
+let suffix = "";
 
 display = function() {
   document.getElementById("name-text").innerHTML = prefix + suffix;
