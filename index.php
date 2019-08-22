@@ -8,9 +8,9 @@
   <body onLoad="init()">
     <p id="name-text">~</p>
     <p>
-      <button onclick="changePrefix()">Change Prefix</button>
-      <button onclick="changeAll()">Change Name</button>
-      <button onclick="changeSuffix()">Change Suffix</button>
+      <input type="button" onclick="changePrefix()" value="Change Prefix"/>
+      <input type="button" onclick="changeAll()" value="Change Name"/>
+      <input type="button" onclick="changeSuffix()" value="Change Suffix"/>
     </p>
   </body>
 </html>
