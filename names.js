@@ -1,27 +1,26 @@
-wc = {};
-wc.prefixes = ["", ""];
-wc.suffixes = ["", ""];
-wc.prefix = "";
-wc.suffix = "";
+prefixes = ["", ""];
+suffixes = ["", ""];
+prefix = "";
+suffix = "";
 
-wc.display = function() {
-  document.getElementById("name-text").innerHTML = wc.prefix + wc.suffix;
-}
-
-wc.changePrefix = function() {
-  wc.prefix = prefixes[Math.floor(Math.random() * wc.prefixes.length)];
-  wc.display();
-}
-wc.changeSuffix = function() {
-  wc.suffix = suffixes[Math.floor(Math.random() * wc.suffixes.length)];
-  wc.display();
-}
-wc.changeAll = function() {
-  wc.changePrefix();
-  wc.changeSuffix();
-  wc.display();
+display = function() {
+  document.getElementById("name-text").innerHTML = prefix + suffix;
 }
 
-wc.init = function() {
-  wc.changeAll();
+changePrefix = function() {
+  prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
+  display();
+}
+changeSuffix = function() {
+  suffix = suffixes[Math.floor(Math.random() * suffixes.length)];
+  display();
+}
+changeAll = function() {
+  changePrefix();
+  changeSuffix();
+  display();
+}
+
+init = function() {
+  changeAll();
 }
