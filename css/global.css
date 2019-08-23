@@ -4,9 +4,3 @@ body {
 body h1, p {
   text-align: center;
 }
-div {
-  background-color: rgb(0, 128, 128);
-}
-div h1 {
-  color: white;
-}
