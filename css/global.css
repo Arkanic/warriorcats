@@ -4,3 +4,6 @@ body {
 body h1, p {
   text-align: center;
 }
+body fieldset {
+  background-color: aqua;
+}
