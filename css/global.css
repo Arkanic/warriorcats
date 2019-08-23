@@ -4,7 +4,6 @@ body {
 body h1, p {
   text-align: center;
 }
-body fieldset {
+div {
   color: aqua;
-  border-width: 0px;
 }
