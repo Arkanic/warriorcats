@@ -6,9 +6,9 @@
     <link href="css/global.css" type="text/css" rel="stylesheet"/>
   </head>
   <body onLoad="init()">
-    <fieldset>
+    <div>
       <h1 id="name-text">~</h1>
-    </fieldset>
+    </div>
     <p>
       <input type="button" onclick="changePrefix()" value="Change Prefix"/>
       <input type="button" onclick="changeAll()" value="Change Name"/>
