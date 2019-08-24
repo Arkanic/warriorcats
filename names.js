@@ -31,12 +31,12 @@ function init() {
 { "prefix":{name prefix}, "suffix":{name suffix}}
 */
 
-//function importJSON() {
-  //var importCode = JSON.parse(document.getElementById("jsoninput").value);
-  //prefix = importCode.prefix;
-  //suffix = importCode.suffix;
-//}
-
-function exportJSON() {
-  document.getElementById("jsoninput").value = "{ \"prefix\":"+prefix+", \"suffix\":"suffix"}";
+function importJSON() {
+  var importCode = JSON.parse(document.getElementById("jsoninput").value);
+  prefix = importCode.prefix;
+  suffix = importCode.suffix;
 }
+
+//function exportJSON() {
+  //document.getElementById("jsoninput").value = "{ \"prefix\":"+prefix+", \"suffix\":"suffix"}";
+//}
