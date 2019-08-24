@@ -14,5 +14,12 @@
       <input type="button" onclick="changeAll()" value="Change Name"/>
       <input type="button" onclick="changeSuffix()" value="Change Suffix"/>
     </p>
+    <p>
+      <input type="text" name="jsoninput" placeholder="Enter save code here..."/>
+      <p>
+        <input type="button" onclick="importJSON()" value="Import"/>
+        <input type="button" onclick="exportJSON()" value="Export"/>
+      </p>
+    </p>
   </body>
 </html>
