@@ -38,5 +38,5 @@ function importJSON() {
 }
 
 function exportJSON() {
-  document.getElementById("jsoninput").innerHTML = "{ \"prefix\":"+prefix+", \"suffix\":"suffix"}";
+  document.getElementById("jsoninput").value = "{ \"prefix\":"+prefix+", \"suffix\":"suffix"}";
 }
