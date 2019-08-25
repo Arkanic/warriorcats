@@ -37,6 +37,6 @@ function importJSON() {
   suffix = importCode.suffix;
 }
 
-//function exportJSON() {
-  //document.getElementById("jsoninput").value = "{ \"prefix\":"+prefix+", \"suffix\":"suffix"}";
-//}
+function exportJSON() {
+  document.getElementById("jsoninput").value = JSON.stringify({"prefix": prefix, "suffix": suffix});
+}
