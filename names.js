@@ -27,14 +27,13 @@ function init() {
   changeAll();
 }
 
-/* JSON format:
-{ "prefix":{name prefix}, "suffix":{name suffix}}
-*/
 
-function importJSON() {
+
+function import() {
   var importCode = JSON.parse(document.getElementById("jsoninput").value);
   prefix = importCode.prefix;
   suffix = importCode.suffix;
+  display();
 }
 
 function exportJSON() {
