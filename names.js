@@ -38,5 +38,5 @@ function importJSON() {
 }
 
 function exportJSON() {
-  document.getElementById("jsoninput").value = "hey there"
+  document.getElementById("jsoninput").value = "Johnny Bravo";
 }
