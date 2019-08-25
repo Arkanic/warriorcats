@@ -29,7 +29,7 @@ function init() {
 
 
 
-function import() {
+function importJSON() {
   var importCode = JSON.parse(document.getElementById("jsoninput").value);
   prefix = importCode.prefix;
   suffix = importCode.suffix;
