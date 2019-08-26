@@ -9,10 +9,10 @@ div.background {
   border: 0px;
 }
 div.mainbox {
-  margin: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
   background-color: #ffffff;
   border: 1px solid black;
-  z-index: 10;
 }
 
 div.mainbox p, div.mainbox h1 {
