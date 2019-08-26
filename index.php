@@ -15,10 +15,10 @@
       <input type="button" onclick="changeSuffix()" value="Change Suffix"/>
     </p>
     <p>
-      <input type="radio" name="rank" id="kit">Kit<br>
-      <input type="radio" name="rank" id="apprentice">Apprentice<br>
-      <input type="radio" name="rank" id="warrior">Warrior<br>
-      <input type="radio" name="rank" id="leader">Clan Leader
+      <input type="radio" name="rank" id="kit">Kit</input>
+      <input type="radio" name="rank" id="apprentice">Apprentice</input>
+      <input type="radio" name="rank" id="warrior">Warrior</input>
+      <input type="radio" name="rank" id="leader">Clan Leader</input>
     <p>
       <input type="text" id="jsoninput" placeholder="Enter save code here..."/>
       <p>
