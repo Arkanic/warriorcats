@@ -44,19 +44,16 @@ function init() {
 function setType(rankNum) {
   if(rankNum == 0) {
     rank = 0;
-    display();
   } else if(rankNum == 1) {
     rank = 1;
-    display();
   } else if(rankNum == 2) {
     rank = 2;
-    display();
   } else if(rankNum == 3) {
     rank = 3;
-    display();
   } else {
     alert("something broke somewhere...");
   }
+  display();
 }
 
 function importJSON() {
