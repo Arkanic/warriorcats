@@ -6,7 +6,7 @@ let prefix = "";
 let suffix = "";
 let preNum = 0;
 let sufNum = 0;
-let rank = 3;
+let rank = 2;
 function display() {
   if(rank == 0) {
     document.getElementById("name-text").innerHTML = prefix + "kit";
