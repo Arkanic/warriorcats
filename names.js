@@ -6,6 +6,7 @@ let prefix = "";
 let suffix = "";
 let preNum = 0;
 let sufNum = 0;
+let rank = 3;
 function display() {
   document.getElementById("name-text").innerHTML = prefix + suffix;
 }
@@ -28,6 +29,20 @@ function changeAll() {
 
 function init() {
   changeAll();
+}
+
+function setType(rankNum) {
+  if(rankNum == 0) {
+    rank = 0;
+  } else if(rankNum == 1) {
+    rank = 1;
+  } else if(rankNum == 2) {
+    rank = 2;
+  } else if(rankNum == 3) {
+    rank = 3;
+  } else {
+    alert("something broke somewhere...");
+  }
 }
 
 function importJSON() {
