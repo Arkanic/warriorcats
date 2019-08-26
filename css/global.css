@@ -6,7 +6,6 @@ body h1, p {
 }
 div.background {
   background: rgb(0, 128, 128);
-  border: 0px;
 }
 div.mainbox {
   margin-left: 10%;
