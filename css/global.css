@@ -1,5 +1,6 @@
 body {
   font-family: Sans-Serif;
+  background-image: linear-gradient(LightSeaGreen, DarkCyan);
 }
 body h1, p {
   text-align: center;
