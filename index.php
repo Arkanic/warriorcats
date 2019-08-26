@@ -15,6 +15,11 @@
       <input type="button" onclick="changeSuffix()" value="Change Suffix"/>
     </p>
     <p>
+      <input type="radio" name="rank" id="kit">Kit<br>
+      <input type="radio" name="rank" id="apprentice">Apprentice<br>
+      <input type="radio" name="rank" id="warrior">Warrior<br>
+      <input type="radio" name="rank" id="leader">Clan Leader
+    <p>
       <input type="text" id="jsoninput" placeholder="Enter save code here..."/>
       <p>
         <input type="button" onclick="importJSON()" value="Import"/>
