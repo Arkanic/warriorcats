@@ -19,6 +19,7 @@ function display() {
   } else {
     document.getElementById("name-text").innerHTML = prefix + suffix; // something has obviously gone very wrong if this gets called...
   }
+  display(); //oh no recursive
 }
 
 function changePrefix() {
