@@ -4,17 +4,20 @@ let prefixes = rawPrefixes.split(" ");
 let suffixes = rawSuffixes.split(" ");
 let prefix = "";
 let suffix = "";
-
+let preNum = 0;
+let sufNum = 0;
 function display() {
   document.getElementById("name-text").innerHTML = prefix + suffix;
 }
 
 function changePrefix() {
-  prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
+  preNum = Math.floor(Math.random() * prefixes.length)
+  prefix = prefixes[preNum];
   display();
 }
 function changeSuffix() {
-  suffix = suffixes[Math.floor(Math.random() * suffixes.length)];
+  sufNum = Math.floor(Math.random() * suffixes.length)
+  suffix = suffixes[sufNum];
   display();
 }
 function changeAll() {
@@ -31,11 +34,11 @@ function init() {
 
 function importJSON() {
   var importCode = JSON.parse(document.getElementById("jsoninput").value);
-  prefix = importCode.prefix;
-  suffix = importCode.suffix;
+  prefix = prefixes[importCode.pre];
+  suffix = suffixes[importCode.suf];
   display();
 }
 
 function exportJSON() {
-  document.getElementById("jsoninput").value = JSON.stringify({"prefix": prefix, "suffix":suffix});
+  document.getElementById("jsoninput").value = JSON.stringify({"pre":preNum, "suf":sufNum});
 }
