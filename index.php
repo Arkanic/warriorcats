@@ -20,10 +20,11 @@
       <input type="button" onclick="setType(2)" value="Warrior"/>
       <input type="button" onclick="setType(3)" value="Clan Leader"/>
     <p>
+      <br></br>
       <input type="text" id="jsoninput" placeholder="Enter save code here..."/>
       <p>
-        <input type="button" onclick="importJSON()" value="Import"/>
-        <input type="button" onclick="exportJSON()" value="Export"/>
+        <input type="button" onclick="importJSON()" value="Import save string"/>
+        <input type="button" onclick="exportJSON()" value="Export save string"/>
       </p>
     </p>
   </body>
