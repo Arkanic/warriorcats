@@ -30,8 +30,6 @@ function init() {
   changeAll();
 }
 
-
-
 function importJSON() {
   var importCode = JSON.parse(document.getElementById("jsoninput").value);
   prefix = prefixes[importCode.pre];
