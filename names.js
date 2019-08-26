@@ -8,6 +8,7 @@ let preNum = 0;
 let sufNum = 0;
 let rank = 3;
 function display() {
+  document.getElementById("name-text").innerHTML = prefix + suffix;
   if(rank == 0) {
     document.getElementById("name-text").innerHTML = prefix + "kit";
   } else if(rank == 1) {
@@ -19,7 +20,6 @@ function display() {
   } else {
     document.getElementById("name-text").innerHTML = prefix + suffix; // something has obviously gone very wrong if this gets called...
   }
-  display(); //oh no recursive
 }
 
 function changePrefix() {
