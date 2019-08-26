@@ -8,8 +8,8 @@ i might try to expand this to a whole character generator.
 
 ## Example names:
 
-Silentsky
-Pikewing
-Finchdawn
-Larkshine
-Fishstreak
+Silentsky  
+Pikewing  
+Finchdawn  
+Larkshine  
+Fishstreak  
