@@ -1,7 +1,21 @@
 body {
   font-family: Sans-Serif;
-  background-image: linear-gradient(to right, LightSeaGreen, DarkCyan);
 }
 body h1, p {
   text-align: center;
+}
+div.background {
+  background: rgb(0, 128, 128);
+  border: 0px;
+}
+div.mainbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+div.mainbox p, div.mainbox h1 {
+  margin: 5%;
 }
