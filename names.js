@@ -8,7 +8,17 @@ let preNum = 0;
 let sufNum = 0;
 let rank = 3;
 function display() {
-  document.getElementById("name-text").innerHTML = prefix + suffix;
+  if(rank == 0) {
+    document.getElementById("name-text").innerHTML = prefix + "kit";
+  } else if(rank == 1) {
+    document.getElementById("name-text").innerHTML = prefix + "paw";
+  } else if(rank == 2) {
+    document.getElementById("name-text").innerHTML = prefix + suffix;
+  } else if(rank == 3) {
+    document.getElementById("name-text").innerHTML = prefix + "star";
+  } else {
+    document.getElementById("name-text").innerHTML = prefix + suffix; // something has obviously gone very wrong if this gets called...
+  }
 }
 
 function changePrefix() {
@@ -49,9 +59,10 @@ function importJSON() {
   var importCode = JSON.parse(document.getElementById("jsoninput").value);
   prefix = prefixes[importCode.pre];
   suffix = suffixes[importCode.suf];
+  rank = importCode.rank;
   display();
 }
 
 function exportJSON() {
-  document.getElementById("jsoninput").value = JSON.stringify({"pre":preNum, "suf":sufNum});
+  document.getElementById("jsoninput").value = JSON.stringify({"pre":preNum, "suf":sufNum, "rank":rank});
 }
