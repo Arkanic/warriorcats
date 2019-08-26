@@ -14,6 +14,7 @@ div.mainbox {
   border: 1px solid black;
   opacity: 0.6;
   filter: alpha(opacity=60);
+  z-index: 1;
 }
 
 div.mainbox p, div.mainbox h1 {
