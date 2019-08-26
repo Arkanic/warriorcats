@@ -9,7 +9,7 @@ div.background {
   border: 0px;
 }
 div.mainbox {
-  margin: 30px;
+  margin: 10%;
   background-color: #ffffff;
   border: 1px solid black;
   z-index: 10;
