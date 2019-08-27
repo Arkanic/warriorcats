@@ -61,9 +61,10 @@ function importJSON() {
   prefix = prefixes[importCode.pre];
   suffix = suffixes[importCode.suf];
   rank = importCode.rank;
+  document.getElementById("description").innerHTML = importCode.desc;
   display();
 }
 
 function exportJSON() {
-  document.getElementById("jsoninput").value = JSON.stringify({"pre":preNum, "suf":sufNum, "rank":rank});
+  document.getElementById("jsoninput").value = JSON.stringify({"pre":preNum, "suf":sufNum, "rank":rank, "desc":document.getElementById("description").value});
 }
