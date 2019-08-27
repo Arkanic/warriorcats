@@ -21,15 +21,18 @@
           <input type="button" onclick="setType(1)" value="Apprentice"/>
           <input type="button" onclick="setType(2)" value="Warrior"/>
           <input type="button" onclick="setType(3)" value="Clan Leader"/>
-        <p>
-          <br></br>
-          <input type="text" id="jsoninput" placeholder="Enter save code here..."/>
-          <p>
-            <input type="button" onclick="importJSON()" value="Import save string"/>
-            <input type="button" onclick="exportJSON()" value="Export save string"/>
-          </p>
         </p>
-     </div>
+        <p>
+          <input type="text" id="description" placeholder="A description of the character..."/>
+        </p>
+        <br></br>
+        <input type="text" id="jsoninput" placeholder="Enter save code here..."/>
+        <p>
+          <input type="button" onclick="importJSON()" value="Import save string"/>
+          <input type="button" onclick="exportJSON()" value="Export save string"/>
+        </p>
+      </p>
    </div>
-  </body>
+ </div>
+</body>
 </html>
