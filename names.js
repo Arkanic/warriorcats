@@ -58,12 +58,12 @@ function setType(rankNum) {
 
 function importJSON() {
   var importCode = JSON.parse(document.getElementById("jsoninput").value);
-  prefix = prefixes[importCode.name[pre];
-  suffix = suffixes[importCode.name[suf];
+  prefix = prefixes[importCode.pre;
+  suffix = suffixes[importCode.suf;
   rank = importCode.rank;
   display();
 }
 
 function exportJSON() {
-  document.getElementById("jsoninput").value = JSON.stringify({"name":{"pre":preNum, "suf":sufNum}, "rank":rank});
+  document.getElementById("jsoninput").value = JSON.stringify("pre":preNum, "suf":sufNum, "rank":rank});
 }
