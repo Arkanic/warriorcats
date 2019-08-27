@@ -22,9 +22,7 @@
           <input type="button" onclick="setType(2)" value="Warrior"/>
           <input type="button" onclick="setType(3)" value="Clan Leader"/>
         </p>
-        <p>
           <input type="text" id="description" placeholder="A description of the character..."/>
-        </p>
         <br></br>
         <input type="text" id="jsoninput" placeholder="Enter save code here..."/>
         <p>
