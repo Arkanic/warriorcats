@@ -65,5 +65,5 @@ function importJSON() {
 }
 
 function exportJSON() {
-  document.getElementById("jsoninput").value = JSON.stringify("pre":preNum, "suf":sufNum, "rank":rank});
+  document.getElementById("jsoninput").value = JSON.stringify({"pre":preNum, "suf":sufNum, "rank":rank});
 }
