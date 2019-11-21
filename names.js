@@ -7,6 +7,7 @@ let suffix = "";
 let preNum = 0;
 let sufNum = 0;
 let rank = 2;
+let description = "";
 function display() {
   if(rank == 0) {
     document.getElementById("name-text").innerHTML = prefix + "kit";
@@ -19,6 +20,7 @@ function display() {
   } else {
     document.getElementById("name-text").innerHTML = prefix + suffix; // something has obviously gone very wrong if this gets called...
   }
+  document.getElementById("description").value = description;
 }
 
 function changePrefix() {
@@ -61,7 +63,7 @@ function importJSON() {
   prefix = prefixes[importCode.pre];
   suffix = suffixes[importCode.suf];
   rank = importCode.rank;
-  document.getElementById("description").innerHTML = importCode.desc;
+  description = importCode.desc;
   display();
 }
 
