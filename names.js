@@ -44,14 +44,8 @@ function init() {
 }
 
 function setType(rankNum) {
-  if(rankNum == 0) {
-    rank = 0;
-  } else if(rankNum == 1) {
-    rank = 1;
-  } else if(rankNum == 2) {
-    rank = 2;
-  } else if(rankNum == 3) {
-    rank = 3;
+  if(rankNum <= 3) {
+    rank = rankNum;
   } else {
     alert("something broke somewhere...");
   }
