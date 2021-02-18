@@ -25,7 +25,7 @@
         <p>
           <input type="text" id="description" placeholder="A description of the character..."/>
         </p>
-        <br></br>
+        <br>
         <p>
           <input type="text" id="jsoninput" placeholder="Enter save code here..."/>
         </p>
@@ -33,8 +33,7 @@
           <input type="button" onclick="importJSON()" value="Import save string"/>
           <input type="button" onclick="exportJSON()" value="Export save string"/>
         </p>
-      </p>
-   </div>
- </div>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
