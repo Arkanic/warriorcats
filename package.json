@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js --progress"
+    "host": "node index.js",
+    "build": "webpack --config webpack.config.js --progress",
+    "quick": "npm run build && npm run host"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.2",
     "css-modules-typescript-loader": "^4.0.1",
+    "express": "^4.17.1",
     "html-loader": "^2.0.0",
     "html-webpack-plugin": "^4.5.2",
     "mini-css-extract-plugin": "^1.3.8",
