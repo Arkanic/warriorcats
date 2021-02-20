@@ -3,10 +3,10 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const TerserJsPlugin = require("terser-webpack-plugin");
 
 module.exports = {
     mode: "production",
-    devtool: "inline-source-map",
 
     stats: {
         children: true
@@ -18,6 +18,15 @@ module.exports = {
     output: {
         filename: "[name].[contenthash].js",
         path: path.resolve(__dirname, "dist")
+    },
+    optimization: {
+        splitChunks: {
+            chunks: "all"
+        },
+        moduleIds: "deterministic",
+        minimizer: [
+            new TerserJsPlugin({})
+        ]
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".css", ".scss"]
@@ -34,11 +43,17 @@ module.exports = {
                     {
                         loader: "css-modules-typescript-loader"
                     },
-                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            esModule: false
+                        }
+                    },
                     {
                         loader: "css-loader",
                         options: {
-                            modules: true
+                            modules: false,
+                            sourceMap: false
                         }
                     },
                     {
