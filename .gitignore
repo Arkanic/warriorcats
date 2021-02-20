@@ -1,4 +1,5 @@
 /node_modules/
 /dist/
 /src/css/**/**.scss.d.ts
+/src/css/**.scss.d.ts
 package-lock.json
