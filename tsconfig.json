@@ -1,0 +1,21 @@
+  {
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "allowJs": true,
+        "sourceMap": false,
+        "outDir": "./build",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "typeRoots": [
+            "node_modules/@types",
+            "src/client/types"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

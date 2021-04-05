@@ -1,0 +1,68 @@
+{
+  "name": "web-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "npm run build && node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arkanic/web-boilerplate.git"
+  },
+  "author": "Arkanic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arkanic/web-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Arkanic/web-boilerplate#readme",
+  "dependencies": {
+    "@types/death": "^1.1.1",
+    "@types/express": "^4.17.11",
+    "@types/node-sass": "^4.11.1",
+    "@types/socket.io": "^2.1.13",
+    "@types/socket.io-client": "^1.4.35",
+    "@types/striptags": "^3.1.1",
+    "@types/throttle-debounce": "^2.1.0",
+    "@types/webpack": "^4.41.26",
+    "@types/webpack-env": "^1.16.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^8.0.0",
+    "css-loader": "^5.0.2",
+    "css-modules-typescript-loader": "^4.0.1",
+    "death": "^1.1.0",
+    "del": "^4.1.1",
+    "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "gulp": "^4.0.2",
+    "gulp-debug": "^4.0.0",
+    "gulp-ignore": "^3.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp-webpack": "^0.0.1",
+    "html-loader": "^2.1.0",
+    "html-webpack-plugin": "^5.2.0",
+    "image-webpack-loader": "^7.0.1",
+    "mini-css-extract-plugin": "^1.3.8",
+    "nanoid": "^3.1.22",
+    "node-sass": "^5.0.0",
+    "pug": "^3.0.1",
+    "pug-html-loader": "^1.1.5",
+    "sass-loader": "^11.0.1",
+    "socket.io": "^3.1.1",
+    "socket.io-client": "^3.1.1",
+    "striptags": "^3.1.1",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "throttle-debounce": "^3.0.1",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.1.5",
+    "webpack": "^5.23.0",
+    "webpack-stream": "^6.1.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.6.0"
+  }
+}
