@@ -1,0 +1,22 @@
+* {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.background {
+    background: rgba(0, 128, 128, 1);
+}
+    
+div.mainbox {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    border: 1px solid black;
+
+    p, h1 {
+        margin: 5%;
+    }
+}
